@@ -1,0 +1,24 @@
+{
+    "name": "sincerely/provide-api-client",
+    "description": "Sincerely's PHP Client for the Provide Commerce API",
+    "require": {
+        "guzzlehttp/guzzle": "~6",
+        "psr/log" : "~1.0.0",
+        "php": ">=5.5.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.7.*"
+    },
+    "authors": [
+        {
+            "name": "Justin Watt",
+            "email": "justin@sincerely.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Provide\\": "src/"
+        }
+    }
+}

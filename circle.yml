@@ -1,0 +1,12 @@
+machine:
+  php:
+    version: 5.5.9
+
+dependencies:
+  pre:
+    - composer --prefer-source update
+
+test:
+  override:
+    - find . -name "*.php" -not -path "./vendor/*" -print0 | xargs -0 -n1 -P0 php -l
+    - phpunit -v -c ~/provide-api-client/tests/phpunit.xml ~/provide-api-client/tests/
